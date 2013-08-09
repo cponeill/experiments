@@ -11,9 +11,6 @@ void setup() {
 void draw() {
   context.update();
   
-  PImage depth = context.depthImage();
-  PImage rgb = context.rgbImage();
-  
-  image(depth, 0, 0);
-  image(rgb, 640, 0);
+  image(context.depthImage(), 0, 0);
+  image(context.rgbImage(), 640, 0);
 }
